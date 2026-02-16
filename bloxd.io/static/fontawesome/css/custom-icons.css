@@ -1,0 +1,25 @@
+.fak.fa-pants, .fa-kit.fa-pants { --fa: "\e000"; --fa--fa: "\e000\e000"; }
+.fak.fa-shoe, .fa-kit.fa-shoe { --fa: "\e001"; --fa--fa: "\e001\e001"; }
+
+.fak, .fa-kit {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: var(--fa-display, inline-block);
+  font-family: "Font Awesome Kit";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+.fak::before, .fa-kit::before {
+  content: var(--fa);
+}
+
+@font-face {
+  font-family: "Font Awesome Kit";
+  font-style: normal;
+  font-display: block;
+  src: url("../webfonts/custom-icons.woff2") format("woff2"), url("../webfonts/custom-icons.ttf") format("truetype");
+}
